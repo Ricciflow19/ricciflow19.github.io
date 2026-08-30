@@ -1,113 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gallery - Zehao Sha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photographs — Zehao Sha</title>
+  <meta name="description" content="Selected photographs from Zehao Sha's travels and academic life.">
   <style>
-    body { font-family: sans-serif; background-color: white; margin: 20px; }
-    h1 { color: #483d8b; text-align: center; }
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .gallery figure {
-      margin: 0 auto;
-      width: 90%;            /* 占视口宽度的90% */
-      max-width: 600px;      /* 限制最大宽度 */
-      text-align: center;
-    }
-    .gallery img {
-      border: 1px solid #ccc;
-      width: 100%;           /* 宽度铺满 figure 容器 */
-      height: auto;          /* 保持纵横比 */
-      display: block;
-    }
-    .gallery figcaption {
-      margin-top: 5px;
-      font-style: italic;
-      color: #666;
-    }
-    a.back-link {
-      display: block;
-      text-align: center;
-      margin-top: 30px;
-      color: #483d8b;
-      text-decoration: none;
-    }
-    a.back-link:hover { text-decoration: underline; }
+    :root{--bg:#121516;--paper:#e9e7df;--muted:#9aa1a1;--line:#343a3b;--accent:#c7b47c}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--paper);font-family:Arial,Helvetica,sans-serif}.page{width:min(1280px,calc(100% - 40px));margin:auto}.topbar{height:64px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;font-size:11px;text-transform:uppercase;letter-spacing:.1em}.topbar a{color:var(--paper);text-decoration:none}.topbar a:hover{color:var(--accent)}.header{padding:66px 0 48px;display:grid;grid-template-columns:1fr 300px;gap:50px;align-items:end}.header h1{font:400 clamp(48px,8vw,102px)/.9 Georgia,"Times New Roman",serif;letter-spacing:-.055em;margin:0}.header p{color:var(--muted);font-size:13px;line-height:1.6;margin:0}.gallery{columns:2 430px;column-gap:22px;border-top:1px solid var(--line);padding-top:22px}.gallery figure{break-inside:avoid;margin:0 0 22px;background:#181c1d;border:1px solid var(--line)}.gallery img{display:block;width:100%;height:auto;filter:saturate(.92);transition:filter .25s,opacity .25s}.gallery figure:hover img{filter:saturate(1.05)}.gallery figcaption{padding:13px 15px 15px;color:#bcc2c1;font:12px/1.55 Arial,Helvetica,sans-serif}.gallery figcaption a{color:var(--paper)}.gallery figcaption strong{display:block;color:var(--paper);font:400 17px Georgia,"Times New Roman",serif;margin-bottom:4px}.footer{margin-top:48px;border-top:1px solid var(--line);min-height:90px;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.09em}.footer a{color:var(--paper);text-decoration:none}.footer a:hover{color:var(--accent)}
+    @media(max-width:720px){.page{width:calc(100% - 24px)}.header{grid-template-columns:1fr;padding:45px 0 35px;gap:22px}.gallery{columns:1}.topbar span:last-child{display:none}}
   </style>
 </head>
 <body>
-  <h1>Gallery</h1>
-  <div class="gallery">
-
-    <figure>
-      <img src="gallery/UCI.jpg" alt="UCI">
-      <figcaption>UCI (2025)</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/Sept_Laux.jpg" alt="Sept Laux">
-      <figcaption>Sept_Laux (2024)</figcaption>
-    </figure>
-
-    <figure>
-      <img src="gallery/colosseo.jpg" alt="Colosseo">
-      <figcaption>Me with Colosseo (2024)</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/Gerard_Rome_Nov_2024.jpg" alt="Gérard">
-      <figcaption>Gérard gave a shourt course in Rome (2024)</figcaption>
-    </figure>
-
-    <figure>
-      <img src="gallery/deux_alpes.jpg" alt="Deux Alpes">
-      <figcaption>Deux Alpes (2023)</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/rainbow.jpg" alt="Rainbow">
-      <figcaption>Rainbow view from my office window after rain (2023)</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/IF2023.jpg" alt="Chinese students at IF 2">
-       <figcaption>
-        Chinese students at IF (2023)<br>
-        Left, from front: Me, <a href="https://sites.google.com/view/tianyilou/">Tianyi Lou</a>, <a href="https://iamcxds.github.io/">Keyao Peng</a><br>
-        Right, from front: Jing Liu, <a href="https://ahdoc.github.io/yibozhang/me.html">Yibo Zhang</a>, Zhiqiang He
-      </figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/IF2022.jpg" alt="Chinese students at IF 1">
-       <figcaption>
-        Chinese students at IF (2022)<br>
-        Left, from front: Me, <a href="https://byzhang.cn/">Bingyu Zhang</a>, <a href="https://ahdoc.github.io/yibozhang/me.html">Yibo Zhang</a><br>
-        Right, from front: <a href="https://iamcxds.github.io/">Keyao Peng</a>, Zhiqiang He, Ziling Li
-      </figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/Sha_Besson_2022.jpg" alt="Me with Gérard">
-      <figcaption>Me with Gérard (2022)</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/castle_valrose.jpg" alt="Castle">
-      <figcaption>Castle in campus valrose at Nice (2022)</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="gallery/first_day_if.jpg" alt="IF">
-      <figcaption>My first day at IF (2022)</figcaption>
-    </figure>
-    <!-- 根据需要添加更多图片 -->
+  <div class="page">
+    <nav class="topbar"><a href="index.html">← Zehao Sha</a><span>Selected photographs</span></nav>
+    <header class="header"><h1>Photographs</h1><p>Places, people, and a few moments around mathematics.</p></header>
+    <main class="gallery">
+      <figure><img src="gallery/b4063965651ff8431506dcd3be59e79b-web.jpg" alt="Panghu, Zehao Sha's cat" fetchpriority="high"><figcaption><strong>My cat, Panghu 胖虎</strong></figcaption></figure>
+      <figure><img src="gallery/76C1984C-20C7-43B2-B8AA-591DA95F4025-web.jpg" alt="Gérard Besson at dinner in Beijing" loading="lazy"><figcaption><strong>Gérard in Beijing</strong>Beijing, July 2026</figcaption></figure>
+      <figure><img src="gallery/1c0971ff912961ed6e489b1daa2d2561-web.jpg" alt="Zehao Sha in front of Mont Blanc" loading="lazy"><figcaption><strong>Mont Blanc</strong>February 2026</figcaption></figure>
+      <figure><img src="gallery/IMG_8634-web.jpg" alt="Hervé Gaussier, Zehao Sha, and Gérard Besson after Zehao Sha's defense" loading="lazy"><figcaption><strong>After my defense</strong>2025<br>From left: <a href="https://www-fourier.univ-grenoble-alpes.fr/~gaussier/">Hervé Gaussier</a>, me, and <a href="https://www-fourier.ujf-grenoble.fr/~besson/">Gérard Besson</a></figcaption></figure>
+      <figure><img src="gallery/IMG_8629-web.jpg" alt="Banquet after Zehao Sha's defense" loading="lazy"><figcaption><strong>Banquet after my defense</strong>2025<br>Standing: <a href="https://www-fourier.univ-grenoble-alpes.fr/~py/">Pierre Py</a>, <a href="https://www.math.u-bordeaux.fr/~vkoziarz/">Vincent Koziarz</a>, and <a href="https://www.imo.universite-paris-saclay.fr/fr/perso/alix-deruelle/">Alix Deruelle</a><br><a href="https://macbuse.github.io/">Greg McShane</a> in the black hat; at right: <a href="https://www-fourier.ujf-grenoble.fr/~besson/">Gérard Besson</a> and <a href="https://www-fourier.univ-grenoble-alpes.fr/~gaussier/">Hervé Gaussier</a></figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/UCI.jpg" alt="University of California, Irvine" loading="lazy"><figcaption><strong>UCI</strong>California, 2025</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/Sept_Laux.jpg" alt="Sept Laux landscape" loading="lazy"><figcaption><strong>Les Sept Laux</strong>France, 2024</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/colosseo.jpg" alt="Zehao Sha at the Colosseum" loading="lazy"><figcaption><strong>Colosseo</strong>Rome, 2024</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/Gerard_Rome_Nov_2024.jpg" alt="Gérard Besson giving a short course in Rome" loading="lazy"><figcaption><strong>A short course in Rome</strong>Gérard Besson, 2024</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/deux_alpes.jpg" alt="Les Deux Alpes" loading="lazy"><figcaption><strong>Les Deux Alpes</strong>France, 2023</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/rainbow.jpg" alt="Rainbow seen from an office window" loading="lazy"><figcaption><strong>After rain</strong>Rainbow from my office window, 2023</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/IF2023.jpg" alt="Chinese students at Institut Fourier in 2023" loading="lazy"><figcaption><strong>Chinese students at Institut Fourier</strong>2023<br>Left, from front: Me, <a href="https://sites.google.com/view/tianyilou/">Tianyi Lou</a>, <a href="https://iamcxds.github.io/">Keyao Peng</a><br>Right, from front: Jing Liu, <a href="https://ahdoc.github.io/yibozhang/me.html">Yibo Zhang</a>, Zhiqiang He</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/IF2022.jpg" alt="Chinese students at Institut Fourier in 2022" loading="lazy"><figcaption><strong>Chinese students at Institut Fourier</strong>2022<br>Left, from front: Me, <a href="https://byzhang.cn/">Bingyu Zhang</a>, <a href="https://ahdoc.github.io/yibozhang/me.html">Yibo Zhang</a><br>Right, from front: <a href="https://iamcxds.github.io/">Keyao Peng</a>, Zhiqiang He, Ziling Li</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/Sha_Besson_2022.jpg" alt="Zehao Sha with Gérard Besson" loading="lazy"><figcaption><strong>With Gérard</strong>2022</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/castle_valrose.jpg" alt="Castle on the Valrose campus in Nice" loading="lazy"><figcaption><strong>Campus Valrose</strong>Nice, 2022</figcaption></figure>
+      <figure><img src="https://ricciflow19.github.io/gallery/first_day_if.jpg" alt="First day at Institut Fourier" loading="lazy"><figcaption><strong>First day at Institut Fourier</strong>Grenoble, 2022</figcaption></figure>
+    </main>
+    <footer class="footer"><span>16 photographs</span><a href="index.html">Back to homepage ↑</a></footer>
   </div>
-
-  <p><a href="index.html">← Back to Home</a></p>
 </body>
 </html>

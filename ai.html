@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Where I Stand on AI — Zehao Sha</title>
+  <meta name="description" content="A personal statement by Zehao Sha on AI, mathematical truth, research practice, and disclosure.">
+  <meta property="og:title" content="Where I Stand on AI — Zehao Sha">
+  <meta property="og:description" content="A personal statement on AI, mathematical truth, research practice, and disclosure.">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/jpg" href="https://ricciflow19.github.io/OK.jpg">
+  <style>
+    :root{--night:#07131f;--night-2:#0b1d2d;--paper:#f3f0e7;--paper-soft:#c9d2d5;--aqua:#8ed7d2;--aqua-deep:#2a7e87;--gold:#d8b970;--line:rgba(202,224,228,.2);--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif;--cn:"Songti SC","STSong","Noto Serif CJK SC",serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--paper);font-family:var(--serif);font-size:18px;line-height:1.72}body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 82% 8%,rgba(55,166,169,.16),transparent 31%),linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:auto,48px 48px,48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 72%)}a{color:var(--aqua);text-underline-offset:3px}a:hover{color:#b6ece7}.shell{width:min(1120px,calc(100% - 42px));margin:auto;position:relative}.topbar{min-height:72px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);font:12px var(--sans);letter-spacing:.08em;text-transform:uppercase}.topbar a{text-decoration:none}.language-nav{display:flex;gap:20px}.hero{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:70px;padding:96px 0 82px;border-bottom:1px solid var(--line)}.eyebrow{margin:0 0 20px;color:var(--aqua);font:700 11px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase}h1{max-width:790px;margin:0;font-size:clamp(56px,8.5vw,112px);font-weight:400;line-height:.91;letter-spacing:-.055em}.hero-meta{align-self:end;padding-bottom:7px;color:var(--paper-soft);font:12px/1.75 var(--sans);letter-spacing:.05em;text-transform:uppercase}.hero-meta strong{display:block;color:var(--gold);font-size:13px}.statement{display:grid;grid-template-columns:180px minmax(0,760px);gap:70px;justify-content:center;padding:86px 0}.rail{position:relative}.rail-inner{position:sticky;top:28px}.rail-label{display:block;margin-bottom:17px;color:var(--gold);font:700 10px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase}.rail nav{display:flex;flex-direction:column;gap:10px;font:12px/1.45 var(--sans)}.rail a{text-decoration:none;color:#9fb0b8}.rail a:hover{color:var(--aqua)}.prose{min-width:0}.lead{margin:0 0 62px;padding:31px 35px;border-left:4px solid var(--aqua);background:linear-gradient(110deg,rgba(42,126,135,.2),rgba(42,126,135,.03));font-size:clamp(22px,3vw,32px);line-height:1.45;letter-spacing:-.012em}.lead strong{font-weight:700}h2{margin:65px 0 18px;color:#fff;font-size:31px;font-weight:400;line-height:1.2;letter-spacing:-.015em}h2:first-of-type{margin-top:0}p{margin:0 0 23px;color:#e4e7e4}.opening{font-size:20px;color:#eef0ea}.three-ways{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:31px 0 38px}.way{padding:20px 18px;border:1px solid var(--line);background:rgba(255,255,255,.025)}.way b{display:block;margin-bottom:6px;color:var(--aqua);font:700 11px var(--sans);letter-spacing:.14em;text-transform:uppercase}.way span{font-size:15px;color:var(--paper-soft)}.axiom{margin:34px 0;padding:28px 31px;border:1px solid rgba(216,185,112,.45);color:#f2e7c8;font-size:21px;font-style:italic}.moment{margin:44px 0;padding:31px 34px;background:var(--paper);color:#10202c}.moment .moment-label{display:block;margin-bottom:9px;color:var(--aqua-deep);font:700 10px var(--sans);letter-spacing:.17em;text-transform:uppercase}.moment p{margin:0;color:#10202c;font-size:20px}.protocol{display:grid;gap:14px;margin:30px 0 34px;counter-reset:protocol}.rule{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:26px 28px;border-top:1px solid var(--line);background:rgba(255,255,255,.025);counter-increment:protocol}.rule::before{content:"0" counter(protocol);color:var(--gold);font:700 15px var(--sans);letter-spacing:.06em}.rule h3{margin:0 0 8px;color:#fff;font:700 17px/1.35 var(--sans)}.rule p{margin:0;color:#cfd7d9;font-size:16px}.divider{display:flex;align-items:center;gap:20px;margin:85px 0 72px;color:var(--gold);font:700 11px var(--sans);letter-spacing:.2em;text-transform:uppercase}.divider::before,.divider::after{content:"";height:1px;flex:1;background:var(--line)}.cn{font-family:var(--cn);line-height:1.85}.cn h2{font-family:var(--cn)}.cn .lead{font-family:var(--cn);line-height:1.7}.cn .way span,.cn .rule p,.cn .moment p{font-family:var(--cn)}.postscript{margin:80px 0 0;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#bec8cc;font-style:italic}footer{display:flex;justify-content:space-between;gap:25px;padding:28px 0 48px;color:#82949d;font:12px var(--sans)}footer a{text-decoration:none}
+    @media(max-width:860px){.hero{grid-template-columns:1fr;gap:42px;padding:72px 0 62px}.hero-meta{align-self:start}.statement{grid-template-columns:1fr;padding:62px 0}.rail{display:none}.three-ways{grid-template-columns:1fr}.lead{margin-bottom:52px}}
+    @media(max-width:560px){body{font-size:17px}.shell{width:min(100% - 28px,1120px)}.topbar{align-items:flex-start;padding:20px 0;gap:20px}.language-nav{gap:12px}.hero{padding-top:58px}.lead{padding:24px 23px}.rule{grid-template-columns:38px 1fr;padding:23px 20px}.moment{padding:25px 23px}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body id="top">
+  <div class="shell">
+    <header class="topbar"><a href="index.html">← Zehao Sha</a><nav class="language-nav" aria-label="Language navigation"><a href="#english">English</a><a href="#chinese" lang="zh-CN">中文</a></nav></header>
+    <main>
+      <header class="hero"><div><p class="eyebrow">A personal statement on mathematical practice</p><h1>Where I stand on AI</h1></div><div class="hero-meta"><strong>September 2026</strong>Truth · authorship<br>verification · disclosure</div></header>
+
+      <article class="statement" id="english">
+        <aside class="rail"><div class="rail-inner"><span class="rail-label">English</span><nav aria-label="English section navigation"><a href="#landscape-en">The landscape</a><a href="#truth-en">Truth &amp; authorship</a><a href="#refusal-en">Against refusal</a><a href="#disclosure-en">My disclosure rule</a></nav></div></aside>
+        <div class="prose">
+          <p class="lead"><strong>I have no interest in using AI to chase long-standing open conjectures merely because they are famous or unresolved. I am much more interested in treating AI as a technically powerful collaborator—one with which I can explore questions that I genuinely care about, test constructions, and develop ideas that would otherwise be difficult to pursue efficiently.</strong></p>
+
+          <section id="landscape-en">
+            <h2>A changed landscape</h2>
+            <p class="opening">Since the release of <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener">GPT-5.6</a> and <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Claude Fable 5</a>, the mathematical community has entered a visibly divided period. Each day brings preprints that describe themselves as AI-generated and human-verified, papers that disclose a more limited use of AI, and papers for which the extent of machine involvement is simply unclear. The resulting uncertainty is unhealthy: readers should not have to infer provenance from style.</p>
+            <p>For me, the central change is not that human mathematicians have become unnecessary. It is that the comparative value of human work is shifting. Formulating one's own questions, examples, concepts, and research programs is becoming more important than being the next person to solve a problem selected by someone else. Human mathematical work is moving toward</p>
+            <div class="axiom">one's own questions, ideas, and mathematical vision &nbsp;&gt;&nbsp; inherited problems and conjectures.</div>
+            <p>This is a statement about where I want to place my effort, not a universal ranking of mathematical worth. Existing conjectures remain important. But when technical execution becomes increasingly shareable with machines, the choice of what to ask—and why it matters—becomes an even more distinctive human contribution.</p>
+            <h2>Three broad attitudes</h2>
+            <p>I currently see three broad attitudes among mathematicians. This is an impression, not a sociological classification, and the boundaries are naturally porous.</p>
+            <div class="three-ways"><div class="way"><b>A · Resist</b><span>Reject AI as a legitimate participant in mathematical work.</span></div><div class="way"><b>B · Embrace</b><span>Use AI openly as part of research practice. This is my position.</span></div><div class="way"><b>C · Wait</b><span>Remain undecided while the norms and capabilities evolve.</span></div></div>
+          </section>
+
+          <section id="truth-en">
+            <h2>Mathematical truth and human authorship</h2>
+            <p>A common objection from the first group is that mathematics is an irreducibly human activity, comparable to art or literature, and that a proof produced without human aesthetic judgment or communal recognition is therefore meaningless. I do not accept this conclusion.</p>
+            <p>Mathematics certainly has human dimensions: we choose axioms, definitions, questions, standards of explanation, and notions of significance. Yet validity within a fixed formal framework does not depend on the species or identity of the reasoner. A proposed proof is valid or invalid because of its mathematical content, not because its author is human or machine. On my view, whether <i>S</i><sup>6</sup> admits a complex structure does not depend on who eventually settles the question. A proof would change what we know, not the mathematical answer itself.</p>
+            <p>Formal proof assistants make this distinction concrete. Once the intended theorem and its assumptions have been faithfully formalized, a system such as Lean can certify the derivation without a human referee checking every inferential step. This does not eliminate human judgment altogether: someone must still examine whether the formal statement expresses the intended mathematics, whether the assumptions are appropriate, and whether the result is interesting. But it shows that correctness and human authorship are not the same criterion.</p>
+          </section>
+
+          <section id="refusal-en">
+            <h2>Why blanket refusal is the wrong response</h2>
+            <p>I also reject the policy of refusing, as a matter of principle, to read, referee, or help publish any work in which AI has participated. Such a policy does not protect mathematical standards. It replaces evaluation of the mathematics with evaluation of the tool.</p>
+            <p>When editors, referees, or other gatekeepers impose categorical penalties on disclosed AI use, they create a perverse incentive: authors gain by concealing the very involvement that the community most needs them to describe honestly. The likely result is not less AI-assisted mathematics, but less transparent AI-assisted mathematics, with greater pressure on researchers who disclose their methods. Journals should instead ask about correctness, novelty, significance, provenance, and reproducibility.</p>
+            <div class="moment"><span class="moment-label">A mathematical Go moment</span><p>The arrival of agentic AI resembles the arrival of computer-assisted proof: distrust of unreliable output is rational; refusing to examine any result because a machine contributed to it is not. One may decline a new instrument, but one cannot preserve an earlier research culture by pretending the instrument does not exist.</p></div>
+            <p>The new era has arrived whether or not any individual welcomes it. The task is therefore to build norms that reward candor, preserve rigorous standards, and distinguish mathematical contribution from mere opacity about how a result was obtained.</p>
+          </section>
+
+          <section id="disclosure-en">
+            <h2>My disclosure rule</h2>
+            <p>I intend to make the following distinction in my own work.</p>
+            <div class="protocol"><div class="rule"><div><h3>Substantive AI assistance</h3><p>I will identify a theorem, proposition, lemma, construction, or other result as AI-assisted when, before the public release of the paper, I could not have completed that step without the AI contribution. This is a counterfactual standard: if I would have obtained every mathematical ingredient without AI, I will not describe the result itself as AI-generated or AI-assisted.</p></div></div><div class="rule"><div><h3>General research assistance</h3><p>Otherwise, I will describe AI's role as limited to ordinary support: language polishing, organization, presentation, routine exploration, and—most importantly—checking arguments for errors, missing cases, and logical gaps. These uses should not be confused with originating an indispensable mathematical step.</p></div></div></div>
+            <p>In joint work, I cannot unilaterally require every coauthor to adopt this exact rule. I will, however, recommend it and argue for disclosure that is specific enough for readers to understand what the AI actually contributed.</p>
+          </section>
+
+          <div class="divider" id="chinese"><span lang="zh-CN">中文版</span></div>
+          <div class="cn" lang="zh-CN">
+            <p class="lead"><strong>我无意仅仅因为某些长期公开猜想著名或尚未解决，就使用人工智能去追逐它们。相比之下，我更愿意把人工智能视为一位技术能力极强的合作者：和它一起探索我真正关心的问题，检验各种构造，并推进那些若只依靠自己便很难高效展开的想法。</strong></p>
+            <section>
+              <h2>正在改变的数学研究生态</h2>
+              <p class="opening">自 <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener">GPT-5.6</a> 与 <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Claude Fable 5</a> 发布以来，数学界进入了一段显著分化的时期。arXiv 每天都会出现明确标注“AI 生成、人工验证”的论文，也有论文只披露了较有限的 AI 使用，还有一些论文让读者无法判断机器究竟参与到了什么程度。这样的不确定性并不健康：读者不应被迫从写作风格反推一项工作的来源。</p>
+              <p>在我看来，这场变化并不意味着人类数学工作者已经变得多余，而是人类工作的相对价值正在转移。提出自己的问题、例子、概念和研究纲领，正在变得比继续解决别人选定的问题更为重要。人类数学工作正在走向：</p>
+              <div class="axiom">自己的问题、想法与数学理念 &nbsp;&gt;&nbsp; 继承而来的问题与猜想。</div>
+              <p>这句话描述的是我愿意把精力放在哪里，而不是对所有数学工作的普遍价值排序。已有猜想仍然重要；但当技术执行越来越能够与机器共同完成时，选择应该问什么以及为什么值得问，便会成为更鲜明的人类贡献。</p>
+              <h2>三种大致的态度</h2>
+              <p>目前，我在数学工作者中看到三种大致的态度。这只是个人观察，并非严格的社会学分类，三者之间的边界也当然可以流动。</p>
+              <div class="three-ways"><div class="way"><b>A · 抵制</b><span>拒绝承认 AI 是数学工作中正当的参与者。</span></div><div class="way"><b>B · 拥抱</b><span>公开地把 AI 纳入研究实践。这是我的立场。</span></div><div class="way"><b>C · 观望</b><span>在能力与规范仍在演化之际暂不决定。</span></div></div>
+            </section>
+            <section>
+              <h2>数学真理与人类作者</h2>
+              <p>A 类立场的一种常见论点是：数学和艺术、文学一样，是不可还原的人类活动；如果没有人类的审美判断与共同体认可，机器给出的证明便没有意义。我不接受这一结论。</p>
+              <p>数学当然具有人类维度：公理、定义、问题、解释标准以及何谓重要，均由我们选择。然而，在一个既定的形式框架内，有效性并不取决于推理者的物种或身份。一个证明成立或不成立，取决于它的数学内容，而不取决于作者是人还是机器。在我看来，<i>S</i><sup>6</sup> 是否存在复结构，并不会因为最终解决问题的是谁而改变；证明改变的是我们的知识，而不是数学答案本身。</p>
+              <p>形式化证明助手使这种区别变得具体。如果预期的定理及其假设已经被忠实地形式化，那么 Lean 一类系统可以认证推导，而不需要人类审稿人逐行检查每一步推理。这并没有完全排除人类判断：仍然需要有人确认形式化陈述是否表达了原本的问题、假设是否恰当，以及结果是否重要。但它说明了数学正确性和人类作者身份并不是同一个标准。</p>
+            </section>
+            <section>
+              <h2>为什么全面拒绝不是正确回应</h2>
+              <p>我同样反对把“不阅读、不审理、不帮助发表任何 AI 参与的工作”当作一项原则。这样的做法并不能保护数学标准，而只是把对数学内容的判断替换成了对工具的判断。</p>
+              <p>当编辑、审稿人或其他掌握学术入口的人对已经披露的 AI 使用施加一概而论的惩罚时，他们会制造一种适得其反的激励：隐瞒 AI 参与反而比诚实说明更有利，而数学共同体最需要了解的恰恰就是这些参与方式。可以预见的结果不是更少的 AI 辅助数学，而是更不透明的 AI 辅助数学，并对诚实披露方法的研究者造成更大压力。期刊真正应该判断的是正确性、新颖性、重要性、来源可追溯性与可复现性。</p>
+              <div class="moment"><span class="moment-label">数学界的“围棋时刻”</span><p>Agentic AI 的到来更像计算机辅助证明刚出现时的情形：不轻信不可靠的输出是理性的；仅仅因为机器参与过，就拒绝检查任何结果，则不是。一个人可以选择不用新的工具，却无法通过假装工具不存在来保存过去的研究生态。</p></div>
+              <p>无论任何个人是否欢迎，新的时代都已经到来。因此，真正的任务是建立一套奖励坦诚、维护严格标准，并能区分实质数学贡献与来源不透明的规范。</p>
+            </section>
+            <section>
+              <h2>我的披露原则</h2>
+              <p>对于自己的工作，我会作如下区分。</p>
+              <div class="protocol"><div class="rule"><div><h3>实质性的 AI 协助</h3><p>如果在论文公开之前，没有 AI 的贡献，我便无法完成某个定理、命题、引理、构造或其他结果，我会明确指出该具体结果得到了 AI 的实质帮助。这是一项反事实标准：如果即使没有 AI，我也会得到文章中的全部数学内容，那么我不会把结果本身称为 AI 生成或 AI 辅助。</p></div></div><div class="rule"><div><h3>一般性的研究辅助</h3><p>在其他情况下，我会把 AI 的作用说明为通常的辅助工作：语言润色、结构安排、表述整理、常规探索，以及最重要的——检查数学论证中的错误、遗漏情形与逻辑缺口。这些用途不应与 AI 产生了不可替代的数学步骤混为一谈。</p></div></div></div>
+              <p>在合作论文中，我无法单方面要求每位合作者都遵循完全相同的标准。但我会建议这样做，并主张披露应当足够具体，使读者能够理解 AI 到底贡献了什么。</p>
+            </section>
+          </div>
+          <p class="postscript">P.S. This statement was itself written with AI assistance. My thanks to GPT-6.<br><span lang="zh-CN">附言：以上文字本身也由 AI 协助写成。感谢 GPT-6。</span></p>
+        </div>
+      </article>
+    </main>
+    <footer><span>Zehao Sha · 沙泽浩</span><span><a href="index.html">Homepage</a> · <a href="#top">Back to top</a></span></footer>
+  </div>
+</body>
+</html>

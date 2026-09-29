@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My math life — Zehao Sha</title>
+  <meta name="description" content="Think. Think harder. Try. Usually fail. Occasionally succeed. Repeat.">
+  <link rel="icon" type="image/jpg" href="OK.jpg">
+  <link rel="stylesheet" href="math-life.css">
+  <script defer src="math-life.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="site-nav"><a href="index.html">Zehao Sha</a><a href="index.html#links">← Elsewhere</a></header>
+    <main>
+      <h1>My math life</h1>
+      <p class="intro">Think. Think harder. Try. Repeat.</p>
+      <figure class="player">
+        <div class="image-stage"><img id="reaction" src="math-life-1.jpg" width="420" height="420" alt="Nailong touching his forehead, starting to think." fetchpriority="high"></div>
+        <figcaption><span class="step-number" id="step-number">1</span><span id="caption">Let's think.</span></figcaption>
+      </figure>
+      <div class="controls" id="controls" hidden>
+        <button id="play-toggle" type="button">Pause</button>
+        <button id="next-step" type="button">Next step →</button>
+      </div>
+      <div class="daily-routes">
+        <p><span>Most days</span><span class="route">1 → 2 → 3 → 5</span><em>Back to square one.</em></p>
+        <p><span>Once in a while</span><span class="route">1 → 2 → 3 → 4</span><em>It works!</em></p>
+      </div>
+      <noscript><p class="no-script">The usual ending:</p><img class="fallback" src="math-life-5.png" width="280" height="280" alt="Nailong looking down, shoulders and arms drooping after another failed attempt."><p>And once in a while:</p><img class="fallback" src="math-life-4.jpg" width="280" height="280" alt="Nailong celebrating with both arms raised."></noscript>
+    </main>
+    <footer><span>And then I try again.</span><a href="index.html">Back to homepage</a></footer>
+  </div>
+</body>
+</html>

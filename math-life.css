@@ -1,0 +1,29 @@
+:root{color-scheme:light;--ink:#262a2d;--blue:#234f73;--muted:#626c74;--line:#cfd6db}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.56 Georgia,"Times New Roman",serif}
+a{color:var(--blue);text-underline-offset:3px}
+.page{width:min(980px,calc(100% - 36px));margin:auto}
+.site-nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}
+.site-nav a:first-child{font-size:18px;text-decoration:none}
+.site-nav a:last-child{font:13px Arial,Helvetica,sans-serif}
+main{text-align:center;padding:44px 0 36px}
+h1{margin:0;color:var(--blue);font-size:42px;font-weight:400;line-height:1.15}
+.intro{color:var(--muted);margin:12px 0 22px}
+.player{margin:0 auto;width:min(420px,100%)}
+.image-stage{aspect-ratio:1;background:#fff}
+.image-stage img{display:block;width:100%;height:100%;object-fit:contain}
+figcaption{display:flex;align-items:center;justify-content:center;gap:12px;min-height:58px;font-size:23px}
+.step-number{display:inline-grid;place-items:center;width:27px;height:27px;border:1px solid var(--line);border-radius:50%;font:13px Arial,Helvetica,sans-serif;color:var(--muted)}
+.controls{display:flex;justify-content:center;gap:12px;margin:10px 0 30px}
+[hidden]{display:none!important}
+button{padding:9px 16px;border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--blue);font:13px Arial,Helvetica,sans-serif;cursor:pointer;min-height:40px}
+button:hover{background:#f4f6f7}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.daily-routes{width:min(550px,100%);margin:24px auto 0;border-top:1px solid var(--line);padding-top:16px}
+.daily-routes p{display:grid;grid-template-columns:135px 140px 1fr;align-items:baseline;gap:12px;margin:10px 0;text-align:left;font-size:14px}
+.daily-routes p>span:first-child{color:var(--muted);font:12px Arial,Helvetica,sans-serif}
+.route{white-space:nowrap;color:var(--blue)}
+.daily-routes em{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font:12px/1.6 Arial,Helvetica,sans-serif}
+.fallback{max-width:100%;object-fit:contain}
+@media(max-width:540px){main{padding-top:32px}h1{font-size:36px}.intro{font-size:15px}.player{max-width:340px}.daily-routes p{grid-template-columns:1fr 1fr;gap:2px 12px}.daily-routes em{grid-column:2}footer{font-size:11px}}
